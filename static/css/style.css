@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+    background-color: #6b6b6b;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+.container {
+    flex: 1; /* Makes the container flex-grow to fill available space */
+}
+
+footer {
+    /* Ensures the footer is pushed to the bottom */
+    margin-top: auto;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #ebeef1 !important;
+}
+
+.skill-item {
+    border: 2px solid white; /* White border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Control the height of the skill card */
+    transition: transform 0.3s ease;
+    background-color: transparent; /* Make the background transparent */
+    padding: 1rem; /* Add some padding around the icon and text */
+}
+
+.skill-item:hover {
+    transform: scale(1.1); /* Adjust scale for hover effect */
+    cursor: pointer;
+}
+
+.skill-icon {
+    max-width: 80%; /* Adjust the icon size as necessary */
+    height: auto;
+    margin-bottom: auto; /* Pushes the text to the bottom of the flex container */
+}
+
+.skill-text {
+    margin-top: auto; /* Aligns the text at the bottom of the flex container */
+    color: white; /* Text color */
+    text-align: center;
+}
+
+/* Ensure text aligns horizontally across different rows */
+.skill-text {
+    height: 3rem; /* Adjust as needed to ensure alignment */
+}
+
+.my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+
+.project-card {
+    transition: transform 0.3s ease;
+    height: 100%; /* Ensures all cards have the same height */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Adds a zoom effect on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the card area */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1; /* Allows the text to fill the space */
+}
+
+.card {
+    background-color: #5b6060;
+}
+
+/*title d projects*/
+.page-title {
+    color: #fff; /* Change this to match your page's color scheme */
+    /* Any additional styling you want for the title */
+}
+
+.full-page-bg {
+    background: url('/static/images/Programmer image.png') no-repeat right center;
+    background-size: contain;
+    opacity: 0.1; /* Adjust the opacity as needed */
+
+}

@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Your Portfolio{% endblock %}
+
+
+{% block content %}
+    <div id="particles-js"></div>
+
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="page-title my-4">My Latest Projects</h2>
+            <h6>"NB:These Projects Will Be Deployed Online Soon!"</h6>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row g-4 justify-content-center">
+            <!-- Project Card 1 -->
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="/static/projects/Image-classification-1200-630.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Deep CNN Image Classifier</h5>
+                        <p class="card-text">
+                            Implemented a cutting-edge Deep CNN Image Classifier, demonstrating mastery in advanced CNN
+                            architectures and deep learning techniques for precise and impactful image
+                            categorization.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="/static/projects/house%20price%20prediction.png" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">House Price Prediction</h5>
+                        <p class="card-text">House Price Prediction
+                            Developed a sophisticated machine learning model to predict house prices, showcasing
+                            expertise in data exploration, feature engineering, and regression models, emphasizing the
+                            practical application of ML in real estate valuation.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="/static/projects/flask%20ecom.png" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Website</h5>
+                        <p class="card-text">
+                            Built an e-commerce website using Flask (Python), prioritizing security with a custom
+                            authentication system and SQL integration. This approach strengthens user data protection
+                            and enhances the overall user experience. .</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="container my-5">
+                <div class="row g-4 justify-content-center">
+                    <!-- Project Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="/static/projects/sentiment%20analysis.jpg" class="card-img-top" alt="Project 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Sentiment Analysis</h5>
+                                <p class="card-text">
+                                    Employed advanced NLP techniques to analyze and classify emotions in text, using
+                                    robust data preprocessing and feature extraction methods, and sophisticated machine
+                                    learning models, to provide deep insights into sentiment analysis of text based
+                                    data.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="/static/projects/visualizer.jpg" class="card-img-top" alt="Project 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Algorithm Visualizer</h5>
+                                <p class="card-text">
+                                    Developed an interactive visualization of the Bubble Sort algorithm, offering a
+                                    step-by-step demonstration of sorting processes with interactive elements to explore
+                                    comparisons and swaps.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card project-card">
+                            <img src="/static/projects/password%20manager.png" class="card-img-top" alt="Project 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Password Manager</h5>
+                                <p class="card-text">
+
+                                    Created a secure password management application using the Tkinter library,
+                                    featuring user-friendly interface for generating, storing, and retrieving passwords,
+                                    providing a convenient solution for efficient credential management
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="mt-auto">
+        <!-- Footer Content Here -->
+    </footer>
+{% endblock %}
+
+
+
+{% block scripts %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            particlesJS.load('particles-js', '{{ url_for("static", filename="js/particlesjs-config.json") }}', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        });
+    </script>
+
+{% endblock %}

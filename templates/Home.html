@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Your Portfolio{% endblock %}
+
+
+{% block content %}
+    <div id="particles-js" ></div>
+
+
+
+    <div class="container-fluid h-100 d-flex flex-column justify-content-center">
+        <div class="row flex-grow-1">
+            <div class="col-md-6 d-flex align-items-center justify-content-center text-center text-md-start">
+                <div>
+                    <h1 class="display-4">Hey There! ✋🏻</h1>
+                    <p class="lead">I am committed to achieving a milestone in my career as a Civil Engineer by 2025. In
+                        addition to my academic pursuits, I have dedicated myself to mastering machine learning and data
+                        science independently. Proficient in Python, coding has become a passion, driving my interest in
+                        crafting innovative solutions.
+                        <br>
+
+
+                        Fascinated by artificial intelligence, I aspire to develop impactful machine learning and deep
+                        learning products. My goal is to address complex challenges and propel technological
+                        advancements in civil engineering and beyond. With a dedication to excellence and a hunger for
+                        knowledge, I am poised to make significant contributions to AI-driven solutions.</p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <img src="static/images/Hicham.png" class="img-fluid rounded-circle mb-3" alt="My Image"
+                     height="auto" width="300">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="page-title my-4">Get in Touch With Me :</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://www.linkedin.com/in/hicham-eloualji/" target="_blank" class="mx-2">
+                        <i class="bi bi-linkedin" style="font-size: 2rem; color: #20476c;"></i>
+                    </a>
+                    <a href="https://github.com/HichamLoji" target="_blank" class="mx-2">
+                        <i class="bi bi-github" style="font-size: 2rem; color: #333;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hichameji/" target="_blank" class="mx-2">
+                        <i class="bi bi-instagram" style="font-size: 2rem; color: #502f65;"></i>
+                    </a>
+                    <!-- Add more social networks as needed -->
+                </div>
+            </div>
+        </div>
+        <footer class="mt-auto">
+            <!-- Footer Content Here -->
+        </footer>
+    </div>
+{% endblock %}
+
+
+
+{% block scripts %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            particlesJS.load('particles-js', '{{ url_for("static", filename="js/particlesjs-config.json") }}', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        });
+    </script>
+
+{% endblock %}

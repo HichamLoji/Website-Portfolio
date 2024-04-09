@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Your Portfolio{% endblock %}
+
+
+{% block content %}
+    <div id="particles-js"></div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="page-title my-4">I Master :</h2>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row justify-content-center align-items-end">
+            <!-- Skill Item 1 -->
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-tensorflow.svg" class="skill-icon" alt="TensorFlow" height="100"
+                         width="100">
+                    <p class="skill-text">TensorFlow</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-selenium-logo.svg" class="skill-icon" alt="Selenium" height="100"
+                         width="100">
+                    <p class="skill-text">Selenium</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-numpy.svg" class="skill-icon" alt="Numpy" height="100"
+                         width="100">
+                    <p class="skill-text">Numpy</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-machine-learning-64.png" class="skill-icon"
+                         alt="Machcine Learning" height="100" width="100">
+                    <p class="skill-text">Machcine Learning</p>
+                </div>
+            </div>
+            <!-- Repeat for other skill items... -->
+        </div>
+        <div class="row justify-content-center align-items-end">
+            <!-- Skill Item 5 -->
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-data-science-100.png" class="skill-icon" alt="Data Science">
+                    <p class="skill-text">Data Science</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-python-150.svg" class="skill-icon" alt="Python" height="100"
+                         width="100">
+                    <p class="skill-text">Python</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-flask.svg" class="skill-icon" alt="Flask" height="100"
+                         width="100">
+                    <p class="skill-text">Flask</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 my-2">
+                <div class="skill-item">
+                    <img src="/static/svgwhite/icons8-keras.svg" class="skill-icon" alt="Keras" height="100"
+                         width="100">
+                    <p class="skill-text">Keras</p>
+                </div>
+            </div>
+            <!-- Repeat for other skill items... -->
+        </div>
+    </div>
+
+
+
+
+    <footer class="mt-auto">
+        <!-- Footer Content Here -->
+    </footer>
+    </div>
+{% endblock %}
+
+
+
+{% block scripts %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            particlesJS.load('particles-js', '{{ url_for("static", filename="js/particlesjs-config.json") }}', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        });
+    </script>
+
+{% endblock %}

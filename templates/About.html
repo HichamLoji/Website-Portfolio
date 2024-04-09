@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div class="container d-flex flex-column align-items-center justify-content-center" >
+        <div class="row">
+            <div class="col-md-8 d-flex flex-column align-items-center" id="lefT"> <!-- Added flexbox properties -->
+                <h1 class="mb-4">Who I'am</h1>
+                <p><h5>I am committed to achieving a milestone in my career as a Civil Engineer by 2025. In addition to
+                    my
+                    academic pursuits, I have dedicated myself to mastering machine learning and data science
+                    independently. Proficient in Python, coding has become a passion, driving my interest in crafting
+                    innovative solutions.<br/><br/><br/> Fascinated by artificial intelligence, I aspire to develop
+                    impactful machine
+                    learning and deep learning products. My goal is to address complex challenges and propel
+                    technological advancements in civil engineering and beyond. With a dedication to excellence and a
+                    hunger for knowledge, I am poised to make significant contributions to AI-driven solutions.</h5></p>
+
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='Hicham.png') }}" alt="Image" id="MyImage"
+                     class="img-fluid rounded-circle" style="width: 70%;">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
